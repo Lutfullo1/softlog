@@ -11,7 +11,7 @@ export const Header = () => {
     <div className="container px-4 lg:px-16 xl:px-20 2xl:px-24">
       <div className="py-4 flex gap-8 items-center justify-between">
         <div>
-          <img src={logo} alt="Logo" className="h-10 w-auto cursor-pointer" />
+          <img src={logo} alt="Logo" className="h-10 w-auto" />
         </div>
 
         <div className="hidden md:flex md:items-center md:justify-between md:w-full">
@@ -41,7 +41,7 @@ export const Header = () => {
           ></Button>
 
           <Modal close={close} isOpen={isOpen}>
-            <div className="flex justify-end">
+            <div className="flex justify-end p-1">
               <Button onClick={close} className="text-xl">
                 ×
               </Button>

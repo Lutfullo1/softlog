@@ -3,14 +3,12 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 
 export const Modal = ({ isOpen, close, children }) => {
   return (
-    <Dialog
-      open={isOpen}
-      onClose={close}
-      className="fixed inset-0 z-30 flex justify-center items-center"
-    >
-      <DialogPanel className="fixed inset-0 bg-black bg-opacity-50">
-        <div className="bg-white rounded-b-lg p-4">{children}</div>
-      </DialogPanel>
+    <Dialog open={isOpen} onClose={close} className="relative z-30">
+      <div className="fixed inset-0 flex justify-end w-screen bg-[#54515124]">
+        <DialogPanel className="rounded bg-white p-2 w-[250px]">
+          {children}
+        </DialogPanel>
+      </div>
     </Dialog>
   );
 };
