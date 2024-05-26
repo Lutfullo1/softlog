@@ -52,14 +52,16 @@ export const Home = () => {
         <h2 className="font-inter font-semibold text-[24px] mb-[32px]">
           Related categories
         </h2>
-        {Array.from({ length: 6 }).map((_, index) => (
-          <CategoryCard
-            key={index}
-            title="CRM Software"
-            subtitle="Sales software"
-            icon={<ArrowRight />}
-          />
-        ))}
+        <div className="grid gap-4 2sm:grid-cols-2 lg:grid-cols-3">
+          {Array.from({ length: 6 }).map((_, index) => (
+            <CategoryCard
+              key={index}
+              title="CRM Software"
+              subtitle="Sales software"
+              icon={<ArrowRight />}
+            />
+          ))}
+        </div>
       </section>
       <section className="container sm:px-[16px] lg:px-[64px] 2xl:px-[80px] py-10">
         <h2 className="font-inter font-semibold text-[24px] mb-[32px]">
