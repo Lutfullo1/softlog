@@ -54,6 +54,9 @@ export const Header = () => {
                 Blog
               </li>
               <li className="font-inter text-lg font-medium hover:text-gray-700 cursor-pointer">
+                Contact
+              </li>
+              <li className="font-inter text-lg font-medium hover:text-gray-700 cursor-pointer">
                 Claim Profile
               </li>
               <li className="font-inter text-lg font-medium hover:text-gray-700 cursor-pointer">
