@@ -13,7 +13,7 @@ export const CategoryCard = ({ title, subtitle, icon, content }) => {
       {({ open }) => (
         <div
           className={`border rounded-md p-6 shadow-md transition-colors duration-300 ease-in-out ${
-            open ? "bg-[#fbf9f9]" : "bg-white"
+            open ? "sm:bg-[#fbf9f9] 2sm:bg-white" : "bg-white"
           }`}
         >
           <DisclosureButton className="w-full flex items-center justify-between">
@@ -30,7 +30,7 @@ export const CategoryCard = ({ title, subtitle, icon, content }) => {
             {icon}
           </DisclosureButton>
           <DisclosurePanel
-            className={`overflow-hidden transition-max-height duration-300 ease-in-out ${
+            className={`overflow-hidden transition-max-height duration-300 ease-in-out sm:block 2sm:hidden ${
               open ? "max-h-screen" : "max-h-0"
             }`}
             static
@@ -39,6 +39,9 @@ export const CategoryCard = ({ title, subtitle, icon, content }) => {
               {content}
             </div>
           </DisclosurePanel>
+          <div className="hidden 2sm:block mt-4 text-[12px] font-inter font-normal">
+            {content}
+          </div>
         </div>
       )}
     </Disclosure>

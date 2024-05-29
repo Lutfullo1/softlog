@@ -12,6 +12,7 @@ import { ReviewBanner } from "../../components/banner/review-banner";
 import { ProfileCard } from "../../components/cards/profile-card";
 import searchImg from "../../assets/img/search-img.png";
 import searchImg2 from "../../assets/img/search-img2.png";
+import { QuestionCard } from "../../components/cards/question-card";
 
 export const Home = () => {
   const titles = ["Product", "Company", "Social", "Resources", "Legal"];
@@ -79,7 +80,7 @@ export const Home = () => {
         </h2>
         <div className="grid grid-cols-1 gap-4">
           {Array.from({ length: 6 }).map((_, index) => (
-            <CategoryCard
+            <QuestionCard
               key={index}
               title="This is a question title"
               content="This is a answer text"
@@ -123,7 +124,7 @@ export const Home = () => {
       <section className="container px-[16px] lg:px-[64px] 2xl:px-[80px] mt-9">
         <div className="grid grid-cols-1 gap-4">
           {titles.map((title) => (
-            <CategoryCard
+            <QuestionCard
               key={title}
               title={title}
               content="Text content"
