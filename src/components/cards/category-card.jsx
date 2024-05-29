@@ -8,7 +8,7 @@ export const CategoryCard = ({ title, subtitle, icon, content }) => {
   return (
     <Disclosure
       as="div"
-      className="relative mt-4 transition-all duration-300 ease-in-out hover:shadow-lg"
+      className="relative mt-4 transition-all duration-300 ease-in-out"
     >
       {({ open }) => (
         <div
