@@ -18,8 +18,8 @@ export const Home = () => {
 
   return (
     <MainLayout>
-      <section className="bg-gradient-to-r from-violet-900 to-violet-600">
-        <div className="container sm:px-[16px] lg:px-[64px] 2xl:px-[80px]">
+      <section className="bg-gradient-to-r from-[rgb(18,14,37)] to-[rgb(79,34,106)]">
+        <div className="container px-[16px] lg:px-[64px] 2xl:px-[80px]">
           <div className="py-[80px] text-center mb-6 lg:w-[885px] mx-[auto]">
             <h1 className="text-white font-bold text-2xl font-inter mb-6 md:text-5xl">
               Category title
@@ -32,7 +32,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <section className="container sm:px-[16px] lg:px-[64px] 2xl:px-[80px]">
+      <section className="container px-[16px] lg:px-[64px] 2xl:px-[80px]">
         <div className="flex items-center justify-between">
           <p className="text-[16px] font-inter font-semibold">805 Listings</p>
           <Button variant="white" endIcon={<FilterIcon />}>
@@ -44,38 +44,51 @@ export const Home = () => {
             <ListingCard key={index} />
           ))}
         </div>
-        <div className="flex items-center justify-center mt-4">
-          <Button variant="white">Load More</Button>
+
+        <div className="flex items-center justify-center mt-7">
+          <a
+            className="w-full sm:w-[150px] flex items-center justify-center px-[20px] py-[8px] text-[16px] font-inter font-medium rounded-3xl transition duration-300 ease-in-out bg-white text-black border-2 hover:bg-gray-300"
+            href="#"
+          >
+            Load more
+          </a>
         </div>
       </section>
-      <section className="container sm:px-[16px] lg:px-[64px] 2xl:px-[80px] py-10">
+      <section className="container px-[16px] lg:px-[64px] 2xl:px-[80px] py-10">
         <h2 className="font-inter font-semibold text-[24px] mb-[32px]">
           Related categories
         </h2>
         <div className="grid gap-4 2sm:grid-cols-2 lg:grid-cols-3">
           {Array.from({ length: 6 }).map((_, index) => (
+            <div key={index} className="flex flex-col h-full">
+              <CategoryCard
+                title="CRM Software"
+                subtitle="Sales software"
+                icon={<ArrowRight />}
+                content="Accounting software automates an organization's financial
+                functions and transactions with modules including accounts
+                payable, accounts receivable, payroll, billing and general ledger."
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="container px-[16px] lg:px-[64px] 2xl:px-[80px] py-10">
+        <h2 className="font-inter font-semibold text-[24px] mb-[32px]">
+          Frequently asked questions
+        </h2>
+        <div className="grid grid-cols-1 gap-4">
+          {Array.from({ length: 6 }).map((_, index) => (
             <CategoryCard
               key={index}
-              title="CRM Software"
-              subtitle="Sales software"
-              icon={<ArrowRight />}
+              title="This is a question title"
+              content="This is a answer text"
+              icon={<PlusIcon />}
             />
           ))}
         </div>
       </section>
-      <section className="container sm:px-[16px] lg:px-[64px] 2xl:px-[80px] py-10">
-        <h2 className="font-inter font-semibold text-[24px] mb-[32px]">
-          Frequently asked questions
-        </h2>
-        {Array.from({ length: 6 }).map((_, index) => (
-          <CategoryCard
-            key={index}
-            title="This is a question title"
-            icon={<PlusIcon />}
-          />
-        ))}
-      </section>
-      <section className="container sm:px-[16px] lg:px-[64px] 2xl:px-[80px]">
+      <section className="container px-[16px] lg:px-[64px] 2xl:px-[80px]">
         <ReviewBanner
           title="Using Products?"
           subtitle="Write a review"
@@ -83,7 +96,7 @@ export const Home = () => {
           img2={stars2}
         />
       </section>
-      <section className="container sm:px-[16px] lg:px-[64px] 2xl:px-[80px] my-8">
+      <section className="container px-[16px] lg:px-[64px] 2xl:px-[80px] my-8">
         <h2 className="font-inter font-semibold text-[24px] mb-[32px]">
           This is a title
         </h2>
@@ -93,11 +106,13 @@ export const Home = () => {
           ))}
         </div>
         <span className="flex items-center gap-2 mt-9 cursor-pointer">
-          <p className="font-inter font-medium text-[16px]">Go to blog</p>
+          <a className="font-inter font-medium text-[16px]" href="#">
+            Go to blog
+          </a>
           <ArrowRight />
         </span>
       </section>
-      <section className="container sm:px-[16px] lg:px-[64px] 2xl:px-[80px]">
+      <section className="container px-[16px] lg:px-[64px] 2xl:px-[80px]">
         <ReviewBanner
           title="Selling products?"
           subtitle="Get discovered"
@@ -105,10 +120,17 @@ export const Home = () => {
           img2={searchImg2}
         />
       </section>
-      <section className="container sm:px-[16px] lg:px-[64px] 2xl:px-[80px] mt-9">
-        {titles.map((title, index) => (
-          <CategoryCard key={index} title={title} icon={<PlusIcon />} />
-        ))}
+      <section className="container px-[16px] lg:px-[64px] 2xl:px-[80px] mt-9">
+        <div className="grid grid-cols-1 gap-4">
+          {titles.map((title) => (
+            <CategoryCard
+              key={title}
+              title={title}
+              content="Text content"
+              icon={<PlusIcon />}
+            />
+          ))}
+        </div>
       </section>
     </MainLayout>
   );

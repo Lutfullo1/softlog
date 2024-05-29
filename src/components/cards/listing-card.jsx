@@ -4,7 +4,7 @@ import { StarIcon } from "../../assets/icons/star-icon";
 
 export const ListingCard = () => {
   return (
-    <div className="border rounded-md p-6">
+    <div className="border rounded-md p-6 shadow-md transition-all duration-300 ease-in-out hover:shadow-lg">
       <div className="flex justify-between mb-6">
         <div className="flex gap-2">
           <img src={figmaImg} alt="" />
@@ -18,9 +18,12 @@ export const ListingCard = () => {
         <div className="flex gap-2">
           <StarIcon />
           <p className="font-inter font-medium text-[14px]">4/5</p>
-          <p className="font-inter font-medium text-[14px] text-primary underline">
+          <a
+            className="font-inter font-medium text-[14px] text-primary underline"
+            href="#"
+          >
             (20 reviews)
-          </p>
+          </a>
         </div>
       </div>
       <div>
@@ -30,10 +33,13 @@ export const ListingCard = () => {
           combining building blocks, like apps and integrations,
           organizations...
         </p>
-        <p className="font-inter font-medium text-[14px] text-primary underline mb-6">
+        <a
+          className="font-inter font-medium text-[14px] text-primary underline"
+          href="#"
+        >
           Read more
-        </p>
-        <div className="flex items-center justify-between">
+        </a>
+        <div className="flex items-center justify-between mt-6">
           <Button variant="white">Show more</Button>
           <Button variant="primary">Try for free </Button>
         </div>

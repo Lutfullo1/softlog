@@ -4,7 +4,7 @@ import skyImg from "../../assets/img/sky-img.png";
 
 export const ProfileCard = () => {
   return (
-    <div className="flex flex-col gap-4 border rounded-md p-6">
+    <div className="flex flex-col gap-4 border rounded-md p-6 shadow-md transition-all duration-300 ease-in-out hover:shadow-lg">
       <div className="hidden 2sm:block 2sm:w-full">
         <img className="2sm:w-full" src={skyImg} alt="" />
       </div>

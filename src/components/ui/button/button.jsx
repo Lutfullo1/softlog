@@ -15,10 +15,11 @@ export const Button = ({
       onClick={onClick}
       type={type}
       className={clsx(
-        "flex items-center gap-2 px-[20px] py-[8px] text-[16px] font-inter font-medium rounded-3xl cursor-pointer",
+        "flex items-center gap-2 px-[20px] py-[8px] text-[16px] font-inter font-medium rounded-3xl cursor-pointer transition-all duration-300 ease-in-out",
         {
-          "bg-primary text-white": variant === "primary",
-          "bg-white text-black border-2": variant === "white",
+          "bg-primary text-white border-2 border-primary hover:text-primary hover:bg-white hover:border-2":
+            variant === "primary",
+          "bg-white text-black border-2 hover:bg-gray-300": variant === "white",
         },
         className
       )}

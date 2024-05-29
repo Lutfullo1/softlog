@@ -7,85 +7,123 @@ export const Footer = () => {
         <hr />
         <div className="hidden 2sm:grid 2sm:grid-cols-3 lg:grid-cols-5 py-4 mt-5">
           <ul className="flex flex-col gap-4">
-            <li className="cursor-pointer font-inter font-semibold text-[18px]">
-              Product
+            <li className="font-inter font-semibold text-[18px]">
+              <p>Product</p>
             </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Categories
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Categories
+              </a>
             </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Write a review
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Write a review
+              </a>
             </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Claim profile
-            </li>
-          </ul>
-          <ul className="flex flex-col gap-4">
-            <li className="cursor-pointer font-inter font-semibold text-[18px]">
-              Company
-            </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              About us
-            </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Press
-            </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Media kit
-            </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Contact
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Claim profile
+              </a>
             </li>
           </ul>
           <ul className="flex flex-col gap-4">
-            <li className="cursor-pointer font-inter font-semibold text-[18px]">
-              Social
+            <li className="font-inter font-semibold text-[18px]">
+              <p>Company</p>
             </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Twitter
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                About us
+              </a>
             </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              LinkedIn
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Press
+              </a>
             </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Facebook
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Media kit
+              </a>
             </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Instagram
-            </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Youtube
-            </li>
-          </ul>
-          <ul className="flex flex-col gap-4">
-            <li className="cursor-pointer font-inter font-semibold text-[18px]">
-              Recources
-            </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Blog
-            </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Newsletter
-            </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Support
-            </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Sitemap
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Contact
+              </a>
             </li>
           </ul>
           <ul className="flex flex-col gap-4">
-            <li className="cursor-pointer font-inter font-semibold text-[18px]">
-              Legal
+            <li className="font-inter font-semibold text-[18px]">
+              <p>Social</p>
             </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Terms
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Twitter
+              </a>
             </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Privacy
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                LinkedIn
+              </a>
             </li>
-            <li className="cursor-pointer font-inter font-medim text-[18px] text-gray-400">
-              Cookies
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Facebook
+              </a>
+            </li>
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Instagram
+              </a>
+            </li>
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                YouTube
+              </a>
+            </li>
+          </ul>
+          <ul className="flex flex-col gap-4">
+            <li className="font-inter font-semibold text-[18px]">
+              <p>Resources</p>
+            </li>
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Blog
+              </a>
+            </li>
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Newsletter
+              </a>
+            </li>
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Support
+              </a>
+            </li>
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Sitemap
+              </a>
+            </li>
+          </ul>
+          <ul className="flex flex-col gap-4">
+            <li className="font-inter font-semibold text-[18px]">
+              <p>Legal</p>
+            </li>
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Terms
+              </a>
+            </li>
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Privacy
+              </a>
+            </li>
+            <li className="cursor-pointer font-inter font-medium text-[18px] text-gray-400">
+              <a href="#" className="hover:underline">
+                Cookies
+              </a>
             </li>
           </ul>
         </div>

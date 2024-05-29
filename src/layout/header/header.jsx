@@ -11,26 +11,32 @@ export const Header = () => {
     <div className="container px-4 lg:px-16 xl:px-20 2xl:px-24">
       <div className="py-4 flex gap-8 items-center justify-between">
         <div>
-          <img src={logo} alt="Logo" className="h-10 w-auto" />
+          <a href="#">
+            <img src={logo} alt="Logo" className="h-10 w-auto" />
+          </a>
         </div>
 
         <div className="hidden md:flex md:items-center md:justify-between md:w-full">
           <ul className="flex items-center gap-8">
-            <li className="font-inter text-base font-medium hover:text-gray-700 cursor-pointer">
-              Categories
+            <li className="font-inter text-base font-medium hover:text-primary transition duration-300 ease-in-out cursor-pointer">
+              <a href="#">Categories</a>
             </li>
-            <li className="font-inter text-base font-medium hover:text-gray-700 cursor-pointer">
-              Blog
+            <li className="font-inter text-base font-medium hover:text-primary transition duration-300 ease-in-out cursor-pointer">
+              <a href="#">Blog</a>
             </li>
-            <li className="font-inter text-base font-medium hover:text-gray-700 cursor-pointer">
-              Contact
+            <li className="font-inter text-base font-medium hover:text-primary transition duration-300 ease-in-out cursor-pointer">
+              <a href="#">Contact</a>
             </li>
           </ul>
 
-          <div className="flex items-center gap-4">
-            <Button variant="white">Claim Profile</Button>
-            <Button variant="primary">Write a Review</Button>
-          </div>
+          <ul className="flex items-center gap-4">
+            <li className="px-[20px] py-[8px] text-[16px] font-inter font-medium rounded-3xl transition duration-300 ease-in-out bg-primary text-white border-2 border-primary hover:text-primary hover:bg-white hover:border-2">
+              <a href="#">Claim Profile</a>
+            </li>
+            <li className="px-[20px] py-[8px] text-[16px] font-inter font-medium rounded-3xl transition duration-300 ease-in-out bg-white text-black border-2 hover:bg-gray-300">
+              <a href="#">Write a Review</a>
+            </li>
+          </ul>
         </div>
 
         <div className="md:hidden">
@@ -43,24 +49,24 @@ export const Header = () => {
           <Modal close={close} isOpen={isOpen}>
             <div className="flex justify-end p-1">
               <Button onClick={close} className="text-xl">
-                ×
+                x
               </Button>
             </div>
             <ul className="flex flex-col items-center gap-4 p-4">
-              <li className="font-inter text-lg font-medium hover:text-gray-700 cursor-pointer">
-                Categories
+              <li className="font-inter text-base font-medium hover:text-primary transition duration-300 ease-in-out cursor-pointer">
+                <a href="#">Categories</a>
               </li>
-              <li className="font-inter text-lg font-medium hover:text-gray-700 cursor-pointer">
-                Blog
+              <li className="font-inter text-base font-medium hover:text-primary transition duration-300 ease-in-out cursor-pointer">
+                <a href="#">Blog</a>
               </li>
-              <li className="font-inter text-lg font-medium hover:text-gray-700 cursor-pointer">
-                Contact
+              <li className="font-inter text-base font-medium hover:text-primary transition duration-300 ease-in-out cursor-pointer">
+                <a href="#">Contact</a>
               </li>
-              <li className="font-inter text-lg font-medium hover:text-gray-700 cursor-pointer">
-                Claim Profile
+              <li className="font-inter text-base font-medium hover:text-primary transition duration-300 ease-in-out cursor-pointer">
+                <a href="#">Claim Profile</a>
               </li>
-              <li className="font-inter text-lg font-medium hover:text-gray-700 cursor-pointer">
-                Write a Review
+              <li className="font-inter text-base font-medium hover:text-primary transition duration-300 ease-in-out cursor-pointer">
+                <a href="#">Write a Review</a>
               </li>
             </ul>
           </Modal>
