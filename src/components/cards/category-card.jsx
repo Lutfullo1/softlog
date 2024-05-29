@@ -33,11 +33,11 @@ export const CategoryCard = ({ title, subtitle, icon, content }) => {
             }`}
             static
           >
-            <div className="text-[12px] font-inter font-normal m-6 mt-0">
+            <div className="text-[12px] font-inter font-normal p-6 pt-0">
               {content}
             </div>
           </DisclosurePanel>
-          <div className="hidden 2sm:block text-[12px] font-inter font-normal m-6 mt-0">
+          <div className="hidden 2sm:block text-[12px] font-inter font-normal p-6 pt-0">
             {content}
           </div>
         </div>
