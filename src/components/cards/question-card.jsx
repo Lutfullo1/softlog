@@ -12,17 +12,15 @@ export const QuestionCard = ({ title, subtitle, icon, content }) => {
     >
       {({ open }) => (
         <div
-          className={`border rounded-md p-6 shadow-md transition-colors duration-300 ease-in-out ${
+          className={`border rounded-md  shadow-md transition-colors duration-300 ease-in-out ${
             open ? "bg-[#fbf9f9]" : "bg-white"
           }`}
         >
-          <DisclosureButton className="w-full flex items-center justify-between">
+          <DisclosureButton className="w-full flex items-center justify-between p-6">
             <div>
-              <p className="font-inter font-semibold text-[16px] mb-3">
-                {title}
-              </p>
+              <p className="font-inter font-semibold text-[16px]">{title}</p>
               {subtitle && (
-                <p className="text-gray-400 font-inter font-medium text-[12px] border p-1 rounded-md">
+                <p className="text-gray-400 font-inter font-medium text-[12px] border p-1 rounded-md mt-3">
                   {subtitle}
                 </p>
               )}
@@ -35,7 +33,7 @@ export const QuestionCard = ({ title, subtitle, icon, content }) => {
             }`}
             static
           >
-            <div className="mt-4 text-[12px] font-inter font-normal">
+            <div className="text-[12px] font-inter font-normal m-6 mt-0">
               {content}
             </div>
           </DisclosurePanel>
